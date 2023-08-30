@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.correoInput = new System.Windows.Forms.TextBox();
-            this.passwordInput = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.passwordInput = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.correoInput = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,44 +54,17 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // label1
+            // button1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Lato", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(122, 78);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(187, 33);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Hola Buen día!";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Lato", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(127, 132);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(58, 19);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Correo";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Lato", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(127, 179);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(90, 19);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Contraseña";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // correoInput
-            // 
-            this.correoInput.Location = new System.Drawing.Point(131, 152);
-            this.correoInput.Name = "correoInput";
-            this.correoInput.Size = new System.Drawing.Size(187, 20);
-            this.correoInput.TabIndex = 3;
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(21)))), ((int)(((byte)(38)))));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.Location = new System.Drawing.Point(131, 239);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(187, 33);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "Ingresar";
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // passwordInput
             // 
@@ -101,17 +74,45 @@
             this.passwordInput.Size = new System.Drawing.Size(187, 20);
             this.passwordInput.TabIndex = 4;
             // 
-            // button1
+            // label3
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(21)))), ((int)(((byte)(38)))));
-            this.button1.Font = new System.Drawing.Font("Lato", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(131, 239);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(187, 33);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Ingresar";
-            this.button1.UseVisualStyleBackColor = false;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(127, 179);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(92, 20);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Contraseña";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(127, 132);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(57, 20);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Correo";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(122, 78);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(191, 31);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Hola Buen día!";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // correoInput
+            // 
+            this.correoInput.Location = new System.Drawing.Point(131, 152);
+            this.correoInput.Name = "correoInput";
+            this.correoInput.Size = new System.Drawing.Size(187, 20);
+            this.correoInput.TabIndex = 3;
+            this.correoInput.Text = "Ingrese su correo";
             // 
             // Form1
             // 
@@ -135,8 +136,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox passwordInput;
-        private System.Windows.Forms.TextBox correoInput;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox correoInput;
     }
 }
 
