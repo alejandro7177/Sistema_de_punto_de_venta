@@ -10,16 +10,15 @@ using System.Windows.Forms;
 
 namespace Proyecto_Taller_AdminShop
 {
-    public partial class Form1 : Form
+    public partial class FIngresar : Form
     {
-        public Form1()
+        public FIngresar()
         {
             InitializeComponent();
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -40,6 +39,21 @@ namespace Proyecto_Taller_AdminShop
         private void label3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void passwordInput_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BIngresar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
