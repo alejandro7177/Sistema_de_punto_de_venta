@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Proyecto_Taller_AdminShop
 {
-    public partial class PruebaDB : Form
+    public partial class PruebaDB : UserControl
     {
         public PruebaDB()
         {
@@ -21,6 +21,11 @@ namespace Proyecto_Taller_AdminShop
         {
             Classes.CConexion objetoConexion = new Classes.CConexion();
             objetoConexion.establecer_conexion();
+        }
+
+        private void PruebaDB_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

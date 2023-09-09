@@ -104,6 +104,7 @@
             this.panel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.panel1.Size = new System.Drawing.Size(482, 330);
             this.panel1.TabIndex = 12;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // inputPassword
             // 

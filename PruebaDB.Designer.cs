@@ -49,6 +49,7 @@
             this.Controls.Add(this.botonDB);
             this.Name = "PruebaDB";
             this.Text = "PruebaDB";
+            this.Load += new System.EventHandler(this.PruebaDB_Load);
             this.ResumeLayout(false);
 
         }
