@@ -16,7 +16,7 @@ namespace Proyecto_Taller_AdminShop.Classes
         static string server = "localhost";
         static string db="TallerII_AdminShop";
         static string user="sa";
-        static string password="Taller7177";
+        static string password="123";
         static string port="1433";
 
         string cadenaConexion = "Data Source=" + server + "," + port + ";" + " user id=" + user + ";" + "password=" + password + ";" + "Initial Catalog=" + db;
