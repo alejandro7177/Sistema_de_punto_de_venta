@@ -53,7 +53,9 @@ namespace Proyecto_Taller_AdminShop
 
         private void BIngresar_Click(object sender, EventArgs e)
         {
-            this.Close();
+            //Pueba de la base de datos
+            PruebaDB prueba = new PruebaDB();
+            prueba.Show();
         }
     }
 }
