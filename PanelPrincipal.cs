@@ -16,6 +16,8 @@ namespace Proyecto_Taller_AdminShop
         {
             InitializeComponent();
             this.WindowState = FormWindowState.Maximized;
+
+            LoadDataTracker();
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -36,8 +38,7 @@ namespace Proyecto_Taller_AdminShop
         private void IB_Click(object sender, EventArgs e)
         {
             panel3.Controls.Clear();
-            PruebaDB prueba = new PruebaDB();
-            panel3.Controls.Add(prueba);
+            LoadDataTracker();
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)
@@ -49,11 +50,24 @@ namespace Proyecto_Taller_AdminShop
         private void RU_Click(object sender, EventArgs e)
         {
             panel3.Controls.Clear();
+            RegistrarUsuarioForm registrarUsuarioForm = new RegistrarUsuarioForm();
+            panel3.Controls.Add(registrarUsuarioForm);
         }
 
         private void label1_Click_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void LoadDataTracker()
+        {
+            DataTracker dataTracker = new DataTracker();
+            panel3.Controls.Add(dataTracker);
+        }
+
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

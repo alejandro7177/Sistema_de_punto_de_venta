@@ -95,6 +95,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\CConexion.cs" />
+    <Compile Include="DataTracker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataTracker.Designer.cs">
+      <DependentUpon>DataTracker.cs</DependentUpon>
+    </Compile>
     <Compile Include="FIngresar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,6 +121,15 @@
     <Compile Include="PruebaDB.Designer.cs">
       <DependentUpon>PruebaDB.cs</DependentUpon>
     </Compile>
+    <Compile Include="RegistrarUsuarioForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RegistrarUsuarioForm.Designer.cs">
+      <DependentUpon>RegistrarUsuarioForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DataTracker.resx">
+      <DependentUpon>DataTracker.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FIngresar.resx">
       <DependentUpon>FIngresar.cs</DependentUpon>
     </EmbeddedResource>
@@ -132,6 +147,9 @@
     </Compile>
     <EmbeddedResource Include="PruebaDB.resx">
       <DependentUpon>PruebaDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistrarUsuarioForm.resx">
+      <DependentUpon>RegistrarUsuarioForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

@@ -32,9 +32,9 @@
             this.RU = new System.Windows.Forms.Button();
             this.IB = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.exitButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.exitButton = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -93,6 +93,23 @@
             this.panel2.TabIndex = 1;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
+            // exitButton
+            // 
+            this.exitButton.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.exitButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(153)))), ((int)(((byte)(174)))));
+            this.exitButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.exitButton.FlatAppearance.BorderSize = 2;
+            this.exitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.exitButton.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exitButton.ForeColor = System.Drawing.Color.White;
+            this.exitButton.Location = new System.Drawing.Point(688, 14);
+            this.exitButton.Name = "exitButton";
+            this.exitButton.Size = new System.Drawing.Size(99, 39);
+            this.exitButton.TabIndex = 2;
+            this.exitButton.Text = "Salir";
+            this.exitButton.UseVisualStyleBackColor = false;
+            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -114,22 +131,6 @@
             this.panel3.Size = new System.Drawing.Size(625, 390);
             this.panel3.TabIndex = 2;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
-            // 
-            // exitButton
-            // 
-            this.exitButton.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.exitButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(153)))), ((int)(((byte)(174)))));
-            this.exitButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.exitButton.FlatAppearance.BorderSize = 2;
-            this.exitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.exitButton.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exitButton.ForeColor = System.Drawing.Color.White;
-            this.exitButton.Location = new System.Drawing.Point(688, 14);
-            this.exitButton.Name = "exitButton";
-            this.exitButton.Size = new System.Drawing.Size(99, 39);
-            this.exitButton.TabIndex = 2;
-            this.exitButton.Text = "Salir";
-            this.exitButton.UseVisualStyleBackColor = false;
             // 
             // PanelPrincipal
             // 
