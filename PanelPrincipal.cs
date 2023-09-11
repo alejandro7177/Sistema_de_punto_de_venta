@@ -50,5 +50,10 @@ namespace Proyecto_Taller_AdminShop
         {
             panel3.Controls.Clear();
         }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
