@@ -16,16 +16,22 @@ namespace Proyecto_Taller_AdminShop.Vendedor
         {
             InitializeComponent();
             this.WindowState = FormWindowState.Maximized;
+            RegistrarCliente registrarCliente = new RegistrarCliente();
+            panelPrincipal.Controls.Add(registrarCliente);
         }
 
         private void IB_Click(object sender, EventArgs e)
         {
-
+            panelPrincipal.Controls.Clear();
+            RegistrarVenta registrarVenta = new RegistrarVenta();
+            panelPrincipal.Controls.Add(registrarVenta);
         }
 
         private void RU_Click(object sender, EventArgs e)
         {
-
+            panelPrincipal.Controls.Clear();
+            ConsultarVenta consultarVenta = new ConsultarVenta();
+            panelPrincipal.Controls.Add(consultarVenta);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -63,6 +69,11 @@ namespace Proyecto_Taller_AdminShop.Vendedor
         private void exitButton_Click_1(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void panelPrincipal_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

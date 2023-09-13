@@ -208,11 +208,17 @@
     <EmbeddedResource Include="RegistrarUsuarioForm.resx">
       <DependentUpon>RegistrarUsuarioForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vendedor\ConsultarVenta.resx">
+      <DependentUpon>ConsultarVenta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vendedor\PanelVendedor.resx">
       <DependentUpon>PanelVendedor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vendedor\RegistrarCliente.resx">
       <DependentUpon>RegistrarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vendedor\RegistrarVenta.resx">
+      <DependentUpon>RegistrarVenta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VentasView.resx">
       <DependentUpon>VentasView.cs</DependentUpon>

@@ -57,7 +57,7 @@ namespace Proyecto_Taller_AdminShop
             PanelPrincipal panel = new PanelPrincipal();
             //panel.Show();
             PanelAdmin panelAdmin = new PanelAdmin();
-            //panelAdmin.Show();
+            panelAdmin.Show();
             Vendedor.PanelVendedor panelVendedor = new Vendedor.PanelVendedor();
             panelVendedor.Show();
             //this.Hide();
