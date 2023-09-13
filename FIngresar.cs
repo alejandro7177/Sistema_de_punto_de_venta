@@ -56,7 +56,8 @@ namespace Proyecto_Taller_AdminShop
             //Pueba de la base de datos
             PanelPrincipal panel = new PanelPrincipal();
             panel.Show();
-
+            PanelAdmin panelAdmin = new PanelAdmin();
+            panelAdmin.Show();
             //this.Hide();
         }
 
