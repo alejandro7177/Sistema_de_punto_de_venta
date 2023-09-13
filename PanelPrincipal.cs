@@ -28,6 +28,7 @@ namespace Proyecto_Taller_AdminShop
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
             panel1.Height = this.ClientSize.Height;
+
         }
 
         private void label1_Click(object sender, EventArgs e)
