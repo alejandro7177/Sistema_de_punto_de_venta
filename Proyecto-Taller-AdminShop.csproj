@@ -95,6 +95,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\CConexion.cs" />
+    <Compile Include="ClientesView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ClientesView.Designer.cs">
+      <DependentUpon>ClientesView.cs</DependentUpon>
+    </Compile>
     <Compile Include="DataTracker.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -113,8 +119,20 @@
     <Compile Include="PanelPrincipal.Designer.cs">
       <DependentUpon>PanelPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="ProductosView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ProductosView.Designer.cs">
+      <DependentUpon>ProductosView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PanelAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PanelAdmin.Designer.cs">
+      <DependentUpon>PanelAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="PruebaDB.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -127,6 +145,39 @@
     <Compile Include="RegistrarUsuarioForm.Designer.cs">
       <DependentUpon>RegistrarUsuarioForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vendedor\ConsultarVenta.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Vendedor\ConsultarVenta.Designer.cs">
+      <DependentUpon>ConsultarVenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vendedor\PanelVendedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vendedor\PanelVendedor.Designer.cs">
+      <DependentUpon>PanelVendedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vendedor\RegistrarCliente.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Vendedor\RegistrarCliente.Designer.cs">
+      <DependentUpon>RegistrarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vendedor\RegistrarVenta.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Vendedor\RegistrarVenta.Designer.cs">
+      <DependentUpon>RegistrarVenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VentasView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="VentasView.Designer.cs">
+      <DependentUpon>VentasView.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ClientesView.resx">
+      <DependentUpon>ClientesView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DataTracker.resx">
       <DependentUpon>DataTracker.cs</DependentUpon>
     </EmbeddedResource>
@@ -135,6 +186,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PanelPrincipal.resx">
       <DependentUpon>PanelPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductosView.resx">
+      <DependentUpon>ProductosView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -145,11 +199,29 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="PanelAdmin.resx">
+      <DependentUpon>PanelAdmin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PruebaDB.resx">
       <DependentUpon>PruebaDB.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RegistrarUsuarioForm.resx">
       <DependentUpon>RegistrarUsuarioForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vendedor\ConsultarVenta.resx">
+      <DependentUpon>ConsultarVenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vendedor\PanelVendedor.resx">
+      <DependentUpon>PanelVendedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vendedor\RegistrarCliente.resx">
+      <DependentUpon>RegistrarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vendedor\RegistrarVenta.resx">
+      <DependentUpon>RegistrarVenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VentasView.resx">
+      <DependentUpon>VentasView.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

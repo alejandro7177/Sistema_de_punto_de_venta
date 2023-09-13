@@ -23,7 +23,6 @@ namespace Proyecto_Taller_AdminShop
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
             panel2.Width = this.ClientSize.Width;
-            //Hola me llamo Fabio
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)

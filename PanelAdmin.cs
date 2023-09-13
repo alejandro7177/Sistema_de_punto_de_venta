@@ -10,37 +10,27 @@ using System.Windows.Forms;
 
 namespace Proyecto_Taller_AdminShop
 {
-    public partial class PanelPrincipal : Form
+    public partial class PanelAdmin : Form
     {
-        public PanelPrincipal()
+        public PanelAdmin()
         {
             InitializeComponent();
             this.WindowState = FormWindowState.Maximized;
+        }
 
-            LoadDataTracker();
+        private void Prueba_Load(object sender, EventArgs e)
+        {
+            LoadVentasView();
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
             panel2.Width = this.ClientSize.Width;
-            //Hola me llamo Fabio
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
             panel1.Height = this.ClientSize.Height;
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void IB_Click(object sender, EventArgs e)
-        {
-            panel3.Controls.Clear();
-            LoadDataTracker();
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)
@@ -49,27 +39,28 @@ namespace Proyecto_Taller_AdminShop
             panel3.Width = this.ClientSize.Width;
         }
 
-        private void RU_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             panel3.Controls.Clear();
-            RegistrarUsuarioForm registrarUsuarioForm = new RegistrarUsuarioForm();
-            panel3.Controls.Add(registrarUsuarioForm);
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void LoadDataTracker()
-        {
-            DataTracker dataTracker = new DataTracker();
-            panel3.Controls.Add(dataTracker);
+            ClientesView clientesView = new ClientesView();
+            panel3.Controls.Add(clientesView);
         }
 
         private void exitButton_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void RU_Click(object sender, EventArgs e)
+        {
+            panel3.Controls.Clear();
+            LoadVentasView();
+        }
+
+        private void LoadVentasView()
+        {
+            VentasView ventasView = new VentasView();
+            panel3.Controls.Add(ventasView);
         }
     }
 }
