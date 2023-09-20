@@ -79,6 +79,19 @@ namespace Proyecto_Taller_AdminShop.Vendedor
             DGSale.Rows.Add("Pañuelos", "20", "$750.00", "Eliminar");
         }
 
+        private void label1_Click(object sender, EventArgs e)
+        {
 
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RegistrarVenta_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

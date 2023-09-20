@@ -107,6 +107,12 @@
     <Compile Include="DataTracker.Designer.cs">
       <DependentUpon>DataTracker.cs</DependentUpon>
     </Compile>
+    <Compile Include="EditarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditarUsuario.Designer.cs">
+      <DependentUpon>EditarUsuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="FIngresar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -145,6 +151,12 @@
     <Compile Include="RegistrarUsuarioForm.Designer.cs">
       <DependentUpon>RegistrarUsuarioForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="UsuariosView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UsuariosView.Designer.cs">
+      <DependentUpon>UsuariosView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vendedor\ConsultarVenta.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -181,6 +193,9 @@
     <EmbeddedResource Include="DataTracker.resx">
       <DependentUpon>DataTracker.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EditarUsuario.resx">
+      <DependentUpon>EditarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FIngresar.resx">
       <DependentUpon>FIngresar.cs</DependentUpon>
     </EmbeddedResource>
@@ -207,6 +222,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RegistrarUsuarioForm.resx">
       <DependentUpon>RegistrarUsuarioForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsuariosView.resx">
+      <DependentUpon>UsuariosView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vendedor\ConsultarVenta.resx">
       <DependentUpon>ConsultarVenta.cs</DependentUpon>
