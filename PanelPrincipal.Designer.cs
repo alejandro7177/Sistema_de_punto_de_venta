@@ -35,6 +35,7 @@
             this.exitButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -42,6 +43,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(153)))), ((int)(((byte)(174)))));
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.RU);
             this.panel1.Controls.Add(this.IB);
             this.panel1.Location = new System.Drawing.Point(0, 44);
@@ -58,7 +60,7 @@
             this.RU.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.RU.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RU.ForeColor = System.Drawing.Color.White;
-            this.RU.Location = new System.Drawing.Point(-20, 84);
+            this.RU.Location = new System.Drawing.Point(-19, 60);
             this.RU.Name = "RU";
             this.RU.Size = new System.Drawing.Size(211, 38);
             this.RU.TabIndex = 1;
@@ -74,7 +76,7 @@
             this.IB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.IB.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.IB.ForeColor = System.Drawing.Color.White;
-            this.IB.Location = new System.Drawing.Point(0, 40);
+            this.IB.Location = new System.Drawing.Point(0, 26);
             this.IB.Name = "IB";
             this.IB.Size = new System.Drawing.Size(179, 38);
             this.IB.TabIndex = 0;
@@ -132,6 +134,22 @@
             this.panel3.TabIndex = 2;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(153)))), ((int)(((byte)(174)))));
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(-3, 97);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(179, 38);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Lista de Usuarios";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // PanelPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -159,5 +177,6 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button exitButton;
+        private System.Windows.Forms.Button button1;
     }
 }

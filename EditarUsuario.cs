@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace Proyecto_Taller_AdminShop
 {
-    public partial class ProductosView : UserControl
+    public partial class EditarUsuario : Form
     {
-        public ProductosView()
+        public EditarUsuario()
         {
             InitializeComponent();
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void EditarUsuario_Load(object sender, EventArgs e)
         {
 
         }

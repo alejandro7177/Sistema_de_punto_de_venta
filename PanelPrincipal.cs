@@ -70,5 +70,12 @@ namespace Proyecto_Taller_AdminShop
         {
             this.Close();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            panel3.Controls.Clear();
+            UsuariosView usuariosView = new UsuariosView();
+            panel3.Controls.Add(usuariosView);
+        }
     }
 }

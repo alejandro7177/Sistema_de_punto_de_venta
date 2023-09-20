@@ -62,5 +62,12 @@ namespace Proyecto_Taller_AdminShop
             VentasView ventasView = new VentasView();
             panel3.Controls.Add(ventasView);
         }
+
+        private void IB_Click(object sender, EventArgs e)
+        {
+            panel3.Controls.Clear();
+            ProductosView productosView = new ProductosView();
+            panel3.Controls.Add(productosView);
+        }
     }
 }
