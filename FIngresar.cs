@@ -57,10 +57,11 @@ namespace Proyecto_Taller_AdminShop
             using (Classes.Models.TallerII_AdminShopEntities db = new Classes.Models.TallerII_AdminShopEntities())
             {
                 var lst = from d in db.Usuario
-                          where d.correo == correoInput.Text 
+                          where d.correo == correoInput.Text
                           && d.contraseña == sPass
                           select d;
-                if(lst.Any())
+
+                if (lst.Any())
                 {
                     var userFound = lst.First();
                     this.Hide();
