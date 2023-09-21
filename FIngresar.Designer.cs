@@ -49,7 +49,7 @@
             this.BIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BIngresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BIngresar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.BIngresar.Location = new System.Drawing.Point(145, 243);
+            this.BIngresar.Location = new System.Drawing.Point(143, 237);
             this.BIngresar.Name = "BIngresar";
             this.BIngresar.Size = new System.Drawing.Size(187, 39);
             this.BIngresar.TabIndex = 11;

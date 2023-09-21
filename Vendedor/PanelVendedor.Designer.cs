@@ -69,7 +69,7 @@
             this.RC.Cursor = System.Windows.Forms.Cursors.Hand;
             this.RC.FlatAppearance.BorderSize = 0;
             this.RC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.RC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RC.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RC.ForeColor = System.Drawing.Color.White;
             this.RC.Location = new System.Drawing.Point(-17, 101);
             this.RC.Name = "RC";
@@ -85,7 +85,7 @@
             this.CV.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CV.FlatAppearance.BorderSize = 0;
             this.CV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CV.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CV.ForeColor = System.Drawing.Color.White;
             this.CV.Location = new System.Drawing.Point(-19, 69);
             this.CV.Name = "CV";
@@ -101,7 +101,7 @@
             this.RV.Cursor = System.Windows.Forms.Cursors.Hand;
             this.RV.FlatAppearance.BorderSize = 0;
             this.RV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.RV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RV.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RV.ForeColor = System.Drawing.Color.White;
             this.RV.Location = new System.Drawing.Point(0, 35);
             this.RV.Name = "RV";
@@ -152,11 +152,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Quicksand", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(21, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(147, 29);
+            this.label1.Size = new System.Drawing.Size(145, 35);
             this.label1.TabIndex = 0;
             this.label1.Text = "AdminShop";
             // 

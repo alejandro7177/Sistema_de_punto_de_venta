@@ -109,6 +109,7 @@
             this.IB.TabIndex = 0;
             this.IB.Text = "Productos";
             this.IB.UseVisualStyleBackColor = false;
+            this.IB.Click += new System.EventHandler(this.IB_Click);
             // 
             // panel1
             // 

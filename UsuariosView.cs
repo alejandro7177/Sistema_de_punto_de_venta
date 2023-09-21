@@ -10,16 +10,17 @@ using System.Windows.Forms;
 
 namespace Proyecto_Taller_AdminShop
 {
-    public partial class ProductosView : UserControl
+    public partial class UsuariosView : UserControl
     {
-        public ProductosView()
+        public UsuariosView()
         {
             InitializeComponent();
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void DGSale_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            EditarUsuario editUserForm = new EditarUsuario();
+            editUserForm.Show();
         }
     }
 }
