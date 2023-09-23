@@ -77,6 +77,8 @@
             this.TBNombre.Name = "TBNombre";
             this.TBNombre.Size = new System.Drawing.Size(240, 20);
             this.TBNombre.TabIndex = 2;
+            this.TBNombre.TextChanged += new System.EventHandler(this.TBNombre_TextChanged);
+            this.TBNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TBNombreKey);
             // 
             // label3
             // 
@@ -96,6 +98,8 @@
             this.TBApellido.Name = "TBApellido";
             this.TBApellido.Size = new System.Drawing.Size(240, 20);
             this.TBApellido.TabIndex = 4;
+            this.TBApellido.TextChanged += new System.EventHandler(this.TBApellido_TextChanged);
+            this.TBApellido.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TBApellido_KeyPress);
             // 
             // label4
             // 
@@ -115,6 +119,7 @@
             this.TBEmail.Name = "TBEmail";
             this.TBEmail.Size = new System.Drawing.Size(240, 20);
             this.TBEmail.TabIndex = 6;
+            this.TBEmail.TextChanged += new System.EventHandler(this.TBEmail_TextChanged);
             // 
             // TBContraseña
             // 
@@ -125,6 +130,7 @@
             this.TBContraseña.PasswordChar = '*';
             this.TBContraseña.Size = new System.Drawing.Size(240, 20);
             this.TBContraseña.TabIndex = 8;
+            this.TBContraseña.TextChanged += new System.EventHandler(this.TBContraseña_TextChanged);
             // 
             // label5
             // 
@@ -144,6 +150,8 @@
             this.TBTelefono.Name = "TBTelefono";
             this.TBTelefono.Size = new System.Drawing.Size(240, 20);
             this.TBTelefono.TabIndex = 10;
+            this.TBTelefono.TextChanged += new System.EventHandler(this.TBTelefono_TextChanged);
+            this.TBTelefono.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TBTelefono_KeyPress);
             // 
             // label6
             // 
@@ -167,17 +175,17 @@
             // 
             // CBRol
             // 
+            this.CBRol.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CBRol.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CBRol.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CBRol.FormattingEnabled = true;
             this.CBRol.Items.AddRange(new object[] {
-            "Usuario",
+            "Vendedor",
             "Administrador"});
             this.CBRol.Location = new System.Drawing.Point(129, 508);
             this.CBRol.Name = "CBRol";
             this.CBRol.Size = new System.Drawing.Size(240, 23);
             this.CBRol.TabIndex = 13;
-            this.CBRol.Text = "Seleccione un Rol";
             // 
             // BRUser
             // 
@@ -202,6 +210,8 @@
             this.TBDni.Name = "TBDni";
             this.TBDni.Size = new System.Drawing.Size(240, 20);
             this.TBDni.TabIndex = 16;
+            this.TBDni.TextChanged += new System.EventHandler(this.TBDni_TextChanged);
+            this.TBDni.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TBDni_KeyPress);
             // 
             // label8
             // 
@@ -221,6 +231,7 @@
             this.TBInstagram.Name = "TBInstagram";
             this.TBInstagram.Size = new System.Drawing.Size(240, 20);
             this.TBInstagram.TabIndex = 18;
+            this.TBInstagram.TextChanged += new System.EventHandler(this.TBInstagram_TextChanged);
             // 
             // label9
             // 

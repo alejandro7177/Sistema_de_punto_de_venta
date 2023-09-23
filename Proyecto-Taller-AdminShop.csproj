@@ -186,6 +186,7 @@
     <Compile Include="UsuariosView.Designer.cs">
       <DependentUpon>UsuariosView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Validations\ValidationUser.cs" />
     <Compile Include="Vendedor\ConsultarVenta.cs">
       <SubType>UserControl</SubType>
     </Compile>

@@ -10,14 +10,14 @@
             <PropertyRef Name="id_usuario" />
           </Key>
           <Property Name="id_usuario" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="contraseña" Type="nvarchar" MaxLength="200" Nullable="false" />
-          <Property Name="tipo_usuario" Type="int" Nullable="false" />
-          <Property Name="correo" Type="varchar" MaxLength="60" Nullable="false" />
-          <Property Name="dni" Type="int" />
-          <Property Name="nombre" Type="varchar" MaxLength="50" />
-          <Property Name="apellido" Type="varchar" MaxLength="50" />
-          <Property Name="telefono" Type="int" />
-          <Property Name="instagram" Type="nvarchar" MaxLength="50" />
+          <Property Name="nombre" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="apellido" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="correo" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="contraseña" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="telefono" Type="bigint" />
+          <Property Name="dni" Type="bigint" />
+          <Property Name="instagram" Type="varchar" MaxLength="50" />
+          <Property Name="tipo_usuario" Type="int" />
         </EntityType>
         <EntityContainer Name="TallerII_AdminShopModelStoreContainer">
           <EntitySet Name="Usuario" EntityType="Self.Usuario" Schema="dbo" store:Type="Tables" />
@@ -26,23 +26,23 @@
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="TallerII_AdminShopModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="TallerII_AdminShopEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Usuario" EntityType="TallerII_AdminShopModel.Usuario" />
+        </EntityContainer>
         <EntityType Name="Usuario">
           <Key>
             <PropertyRef Name="id_usuario" />
           </Key>
           <Property Name="id_usuario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="contraseña" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="tipo_usuario" Type="Int32" Nullable="false" />
-          <Property Name="correo" Type="String" MaxLength="60" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="dni" Type="Int32" />
-          <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-          <Property Name="apellido" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-          <Property Name="telefono" Type="Int32" />
-          <Property Name="instagram" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="nombre" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="apellido" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="correo" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="contraseña" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="telefono" Type="Int64" />
+          <Property Name="dni" Type="Int64" />
+          <Property Name="instagram" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="tipo_usuario" Type="Int32" />
         </EntityType>
-        <EntityContainer Name="TallerII_AdminShopEntities" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="Usuario" EntityType="Self.Usuario" />
-        </EntityContainer>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -52,15 +52,15 @@
           <EntitySetMapping Name="Usuario">
             <EntityTypeMapping TypeName="TallerII_AdminShopModel.Usuario">
               <MappingFragment StoreEntitySet="Usuario">
+                <ScalarProperty Name="tipo_usuario" ColumnName="tipo_usuario" />
                 <ScalarProperty Name="instagram" ColumnName="instagram" />
+                <ScalarProperty Name="dni" ColumnName="dni" />
                 <ScalarProperty Name="telefono" ColumnName="telefono" />
+                <ScalarProperty Name="contraseña" ColumnName="contraseña" />
+                <ScalarProperty Name="correo" ColumnName="correo" />
                 <ScalarProperty Name="apellido" ColumnName="apellido" />
                 <ScalarProperty Name="nombre" ColumnName="nombre" />
-                <ScalarProperty Name="dni" ColumnName="dni" />
                 <ScalarProperty Name="id_usuario" ColumnName="id_usuario" />
-                <ScalarProperty Name="contraseña" ColumnName="contraseña" />
-                <ScalarProperty Name="tipo_usuario" ColumnName="tipo_usuario" />
-                <ScalarProperty Name="correo" ColumnName="correo" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
