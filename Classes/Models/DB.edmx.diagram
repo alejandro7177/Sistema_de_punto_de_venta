@@ -4,9 +4,19 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="5af1c7fd7640464b89bd4df4f32332dc" Name="Diagram1" ZoomLevel="84">
-        <EntityTypeShape EntityType="TallerII_AdminShopModel.Clientes" Width="1.5" PointX="0.5" PointY="0.5" />
-        <EntityTypeShape EntityType="TallerII_AdminShopModel.Usuario" Width="1.5" PointX="5.25" PointY="1.875" />
+      <Diagram DiagramId="9fbd3be8564441358b18d4e1c550a952" Name="Diagram1">
+        <EntityTypeShape EntityType="Admin_shopModel.Categoria" Width="1.5" PointX="3.75" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="Admin_shopModel.Cliente" Width="1.5" PointX="3" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Admin_shopModel.Producto" Width="1.5" PointX="6" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Admin_shopModel.Usuario" Width="1.5" PointX="0.75" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Admin_shopModel.Venta" Width="1.5" PointX="3" PointY="12" IsExpanded="true" />
+        <EntityTypeShape EntityType="Admin_shopModel.Venta_detalle" Width="1.5" PointX="8.25" PointY="8.625" IsExpanded="true" />
+        <AssociationConnector Association="Admin_shopModel.product_category" ManuallyRouted="false" />
+        <AssociationConnector Association="Admin_shopModel.client_user" ManuallyRouted="false" />
+        <AssociationConnector Association="Admin_shopModel.detailVenta_product" ManuallyRouted="false" />
+        <AssociationConnector Association="Admin_shopModel.product_user" ManuallyRouted="false" />
+        <AssociationConnector Association="Admin_shopModel.venta_user" ManuallyRouted="false" />
+        <AssociationConnector Association="Admin_shopModel.detailVenta_venta" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

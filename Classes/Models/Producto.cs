@@ -12,34 +12,28 @@ namespace Proyecto_Taller_AdminShop.Classes.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class Usuario
+    public partial class Producto
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Usuario()
+        public Producto()
         {
-            this.Cliente = new HashSet<Cliente>();
-            this.Producto = new HashSet<Producto>();
-            this.Venta = new HashSet<Venta>();
+            this.Venta_detalle = new HashSet<Venta_detalle>();
         }
     
-        public int id_usuario { get; set; }
-        public int tipo_usuario { get; set; }
-        public long dni { get; set; }
-        public string correo { get; set; }
-        public string contraseña { get; set; }
-        public string nombre { get; set; }
-        public string apellido { get; set; }
-        public long telefono { get; set; }
-        public string instagram { get; set; }
+        public int id_producto { get; set; }
+        public string descripcion { get; set; }
+        public double precio_costo { get; set; }
+        public double precio_venta { get; set; }
+        public int stock { get; set; }
         public Nullable<byte> estado { get; set; }
         public Nullable<System.DateTime> create_date { get; set; }
         public Nullable<System.DateTime> modify_date { get; set; }
+        public int id_categoria { get; set; }
+        public int create_by { get; set; }
     
+        public virtual Categoria Categoria { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Cliente> Cliente { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Producto> Producto { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Venta> Venta { get; set; }
+        public virtual ICollection<Venta_detalle> Venta_detalle { get; set; }
+        public virtual Usuario Usuario { get; set; }
     }
 }

@@ -106,23 +106,38 @@
   <ItemGroup>
     <Compile Include="Classes\CConexion.cs" />
     <Compile Include="Classes\Encrypt.cs" />
-    <Compile Include="Classes\Models\DB.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DB.Context.tt</DependentUpon>
+    <Compile Include="Classes\Models\Categoria.cs">
+      <DependentUpon>db.tt</DependentUpon>
     </Compile>
-    <Compile Include="Classes\Models\DB.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DB.tt</DependentUpon>
+    <Compile Include="Classes\Models\Cliente.cs">
+      <DependentUpon>db.tt</DependentUpon>
     </Compile>
-    <Compile Include="Classes\Models\DB.Designer.cs">
+    <Compile Include="Classes\Models\db.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DB.edmx</DependentUpon>
+      <DependentUpon>db.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Models\db.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Models\db.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Models\Producto.cs">
+      <DependentUpon>db.tt</DependentUpon>
     </Compile>
     <Compile Include="Classes\Models\Usuario.cs">
-      <DependentUpon>DB.tt</DependentUpon>
+      <DependentUpon>db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Models\Venta.cs">
+      <DependentUpon>db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Models\Venta_detalle.cs">
+      <DependentUpon>db.tt</DependentUpon>
     </Compile>
     <Compile Include="ClientesView.cs">
       <SubType>UserControl</SubType>
@@ -271,12 +286,12 @@
     <EmbeddedResource Include="VentasView.resx">
       <DependentUpon>VentasView.cs</DependentUpon>
     </EmbeddedResource>
-    <EntityDeploy Include="Classes\Models\DB.edmx">
+    <EntityDeploy Include="Classes\Models\db.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>DB.Designer.cs</LastGenOutput>
+      <LastGenOutput>db.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="Classes\Models\DB.edmx.diagram">
-      <DependentUpon>DB.edmx</DependentUpon>
+    <None Include="Classes\Models\db.edmx.diagram">
+      <DependentUpon>db.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -292,17 +307,16 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <Content Include="Classes\Models\DB.Context.tt">
+    <Content Include="Classes\Models\db.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>DB.edmx</DependentUpon>
-      <LastGenOutput>DB.Context.cs</LastGenOutput>
+      <DependentUpon>db.edmx</DependentUpon>
+      <LastGenOutput>db.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Classes\Models\DB.tt">
+    <Content Include="Classes\Models\db.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>DB.edmx</DependentUpon>
-      <LastGenOutput>DB.cs</LastGenOutput>
+      <DependentUpon>db.edmx</DependentUpon>
+      <LastGenOutput>db.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <ItemGroup>

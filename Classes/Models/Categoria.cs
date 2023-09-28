@@ -12,34 +12,21 @@ namespace Proyecto_Taller_AdminShop.Classes.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class Usuario
+    public partial class Categoria
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Usuario()
+        public Categoria()
         {
-            this.Cliente = new HashSet<Cliente>();
             this.Producto = new HashSet<Producto>();
-            this.Venta = new HashSet<Venta>();
         }
     
-        public int id_usuario { get; set; }
-        public int tipo_usuario { get; set; }
-        public long dni { get; set; }
-        public string correo { get; set; }
-        public string contraseña { get; set; }
-        public string nombre { get; set; }
-        public string apellido { get; set; }
-        public long telefono { get; set; }
-        public string instagram { get; set; }
+        public int id_categoria { get; set; }
+        public string descripcion { get; set; }
         public Nullable<byte> estado { get; set; }
         public Nullable<System.DateTime> create_date { get; set; }
         public Nullable<System.DateTime> modify_date { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Cliente> Cliente { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Producto> Producto { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Venta> Venta { get; set; }
     }
 }

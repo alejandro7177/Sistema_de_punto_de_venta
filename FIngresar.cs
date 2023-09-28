@@ -54,7 +54,7 @@ namespace Proyecto_Taller_AdminShop
         private void BIngresar_Click(object sender, EventArgs e)
         {
             string sPass = Classes.Encrypt.GetSHA256(inputPassword.Text.Trim()); //incripta la password recibida por el input para compararla con la de la db
-            using (Classes.Models.TallerII_AdminShopEntities db = new Classes.Models.TallerII_AdminShopEntities())
+            using (Classes.Models.Admin_shopEn db = new Classes.Models.Admin_shopEn())
             {
                 var lst = from d in db.Usuario
                           where d.correo == correoInput.Text
