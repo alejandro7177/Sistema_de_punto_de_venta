@@ -40,7 +40,7 @@ namespace Proyecto_Taller_AdminShop
             if (valid)
             {
                 string sPass = Classes.Encrypt.GetSHA256(TBContraseña.Text.Trim());
-                using (Classes.Models.TallerII_AdminShopEntities db = new Classes.Models.TallerII_AdminShopEntities())
+                using (Classes.Models.Admin_shopEn db = new Classes.Models.Admin_shopEn())
                 {
                     Usuario user = new Usuario();
                     if (CBRol.SelectedItem.ToString() == "Vendedor")

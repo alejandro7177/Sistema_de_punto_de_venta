@@ -13,10 +13,10 @@ namespace Proyecto_Taller_AdminShop.Classes.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class TallerII_AdminShopEntities : DbContext
+    public partial class Admin_shopEn : DbContext
     {
-        public TallerII_AdminShopEntities()
-            : base("name=TallerII_AdminShopEntities")
+        public Admin_shopEn()
+            : base("name=Admin_shopEn")
         {
         }
     
@@ -25,6 +25,11 @@ namespace Proyecto_Taller_AdminShop.Classes.Models
             throw new UnintentionalCodeFirstException();
         }
     
+        public virtual DbSet<Categoria> Categoria { get; set; }
+        public virtual DbSet<Cliente> Cliente { get; set; }
+        public virtual DbSet<Producto> Producto { get; set; }
         public virtual DbSet<Usuario> Usuario { get; set; }
+        public virtual DbSet<Venta> Venta { get; set; }
+        public virtual DbSet<Venta_detalle> Venta_detalle { get; set; }
     }
 }
