@@ -73,7 +73,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(21, 13);
+            this.label1.Location = new System.Drawing.Point(21, 16);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(147, 29);
             this.label1.TabIndex = 0;
@@ -85,9 +85,9 @@
             this.RU.Cursor = System.Windows.Forms.Cursors.Hand;
             this.RU.FlatAppearance.BorderSize = 0;
             this.RU.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.RU.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RU.Font = new System.Drawing.Font("Quicksand", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RU.ForeColor = System.Drawing.Color.White;
-            this.RU.Location = new System.Drawing.Point(-19, 69);
+            this.RU.Location = new System.Drawing.Point(-20, 72);
             this.RU.Name = "RU";
             this.RU.Size = new System.Drawing.Size(211, 38);
             this.RU.TabIndex = 1;
@@ -101,9 +101,9 @@
             this.IB.Cursor = System.Windows.Forms.Cursors.Hand;
             this.IB.FlatAppearance.BorderSize = 0;
             this.IB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.IB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IB.Font = new System.Drawing.Font("Quicksand", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.IB.ForeColor = System.Drawing.Color.White;
-            this.IB.Location = new System.Drawing.Point(0, 35);
+            this.IB.Location = new System.Drawing.Point(1, 37);
             this.IB.Name = "IB";
             this.IB.Size = new System.Drawing.Size(179, 38);
             this.IB.TabIndex = 0;
@@ -129,9 +129,9 @@
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Quicksand", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(-17, 101);
+            this.button1.Location = new System.Drawing.Point(-18, 109);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(211, 38);
             this.button1.TabIndex = 2;

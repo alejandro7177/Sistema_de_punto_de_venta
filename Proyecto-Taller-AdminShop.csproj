@@ -104,7 +104,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\CConexion.cs" />
     <Compile Include="Classes\Encrypt.cs" />
     <Compile Include="Classes\Models\Categoria.cs">
       <DependentUpon>db.tt</DependentUpon>
@@ -183,12 +182,6 @@
     <Compile Include="PanelAdmin.Designer.cs">
       <DependentUpon>PanelAdmin.cs</DependentUpon>
     </Compile>
-    <Compile Include="PruebaDB.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="PruebaDB.Designer.cs">
-      <DependentUpon>PruebaDB.cs</DependentUpon>
-    </Compile>
     <Compile Include="RegistrarUsuarioForm.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -261,9 +254,6 @@
     </Compile>
     <EmbeddedResource Include="PanelAdmin.resx">
       <DependentUpon>PanelAdmin.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PruebaDB.resx">
-      <DependentUpon>PruebaDB.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RegistrarUsuarioForm.resx">
       <DependentUpon>RegistrarUsuarioForm.cs</DependentUpon>

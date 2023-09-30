@@ -21,5 +21,10 @@ namespace Proyecto_Taller_AdminShop
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //si jugasa a visual
+        }
     }
 }

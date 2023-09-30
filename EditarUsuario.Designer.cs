@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
@@ -42,13 +43,20 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.TBInstagram = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.TBDni = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(244)))));
+            this.panel1.Controls.Add(this.TBInstagram);
+            this.panel1.Controls.Add(this.label9);
+            this.panel1.Controls.Add(this.TBDni);
+            this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.comboBox1);
             this.panel1.Controls.Add(this.label7);
@@ -65,28 +73,44 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(614, 573);
+            this.panel1.Size = new System.Drawing.Size(614, 722);
             this.panel1.TabIndex = 0;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(21)))), ((int)(((byte)(38)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(158, 592);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(239, 34);
+            this.button1.TabIndex = 27;
+            this.button1.Text = "Editar Usuario";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // comboBox1
             // 
+            this.comboBox1.AllowDrop = true;
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox1.Font = new System.Drawing.Font("Quicksand", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.Font = new System.Drawing.Font("Quicksand", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "Usuario",
             "Administrador"});
-            this.comboBox1.Location = new System.Drawing.Point(160, 410);
+            this.comboBox1.Location = new System.Drawing.Point(160, 536);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(240, 26);
             this.comboBox1.TabIndex = 26;
-            this.comboBox1.Text = "Seleccione un Rol";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(155, 383);
+            this.label7.Location = new System.Drawing.Point(155, 509);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(35, 24);
             this.label7.TabIndex = 25;
@@ -107,7 +131,7 @@
             this.label6.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(155, 317);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(77, 24);
+            this.label6.Size = new System.Drawing.Size(76, 24);
             this.label6.TabIndex = 23;
             this.label6.Text = "Telefono";
             // 
@@ -197,25 +221,49 @@
             this.label1.TabIndex = 14;
             this.label1.Text = "Editar Usuario";
             // 
-            // button1
+            // TBInstagram
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(21)))), ((int)(((byte)(38)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(158, 466);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(239, 34);
-            this.button1.TabIndex = 27;
-            this.button1.Text = "Editar Usuario";
-            this.button1.UseVisualStyleBackColor = false;
+            this.TBInstagram.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TBInstagram.Location = new System.Drawing.Point(161, 476);
+            this.TBInstagram.Multiline = true;
+            this.TBInstagram.Name = "TBInstagram";
+            this.TBInstagram.Size = new System.Drawing.Size(240, 20);
+            this.TBInstagram.TabIndex = 31;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(156, 445);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(91, 24);
+            this.label9.TabIndex = 30;
+            this.label9.Text = "Instagram";
+            // 
+            // TBDni
+            // 
+            this.TBDni.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TBDni.Location = new System.Drawing.Point(160, 412);
+            this.TBDni.Multiline = true;
+            this.TBDni.Name = "TBDni";
+            this.TBDni.Size = new System.Drawing.Size(240, 20);
+            this.TBDni.TabIndex = 29;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(155, 381);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(49, 24);
+            this.label8.TabIndex = 28;
+            this.label8.Text = "D.N.I.";
             // 
             // EditarUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(613, 577);
+            this.ClientSize = new System.Drawing.Size(613, 712);
             this.Controls.Add(this.panel1);
             this.Name = "EditarUsuario";
             this.Text = "EditarUsuario";
@@ -243,5 +291,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox TBInstagram;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox TBDni;
+        private System.Windows.Forms.Label label8;
     }
 }
