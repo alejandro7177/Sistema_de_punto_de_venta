@@ -94,6 +94,7 @@
             this.DG_Users.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DG_Users.Size = new System.Drawing.Size(844, 400);
             this.DG_Users.TabIndex = 18;
+            this.DG_Users.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DG_Users_CellContentClick);
             // 
             // nombre
             // 

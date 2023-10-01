@@ -41,5 +41,10 @@ namespace Proyecto_Taller_AdminShop
             DG_Users.Rows.Add("Juan", "Perez", "admin@gmail", "4353453", "Juan@Perez");
 
         }
+
+        private void DG_Users_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
