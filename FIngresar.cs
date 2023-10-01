@@ -52,7 +52,7 @@ namespace Proyecto_Taller_AdminShop
                 }
                 else
                 {
-                    MessageBox.Show("Usuario no existe o contraseña equivocada!!");
+                    MessageBox.Show("Usuario no existe o contraseña equivocada!!", "Error",MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
