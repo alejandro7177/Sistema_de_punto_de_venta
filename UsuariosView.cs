@@ -15,12 +15,31 @@ namespace Proyecto_Taller_AdminShop
         public UsuariosView()
         {
             InitializeComponent();
+            InitializeDataGridView();
         }
 
         private void DGSale_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             EditarUsuario editUserForm = new EditarUsuario();
             editUserForm.Show();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void InitializeDataGridView()
+        {
+            DG_Users.Rows.Add("Juan", "Perez", "admin@gmail", "4353453", "Juan@Perez");
+            DG_Users.Rows.Add("Juan", "Perez", "admin@gmail", "4353453", "Juan@Perez");
+            DG_Users.Rows.Add("Juan", "Perez", "admin@gmail", "4353453", "Juan@Perez");
+            DG_Users.Rows.Add("Juan", "Perez", "admin@gmail", "4353453", "Juan@Perez");
+            DG_Users.Rows.Add("Juan", "Perez", "admin@gmail", "4353453", "Juan@Perez");
+            DG_Users.Rows.Add("Juan", "Perez", "admin@gmail", "4353453", "Juan@Perez");
+            DG_Users.Rows.Add("Juan", "Perez", "admin@gmail", "4353453", "Juan@Perez");
+            DG_Users.Rows.Add("Juan", "Perez", "admin@gmail", "4353453", "Juan@Perez");
+
         }
     }
 }

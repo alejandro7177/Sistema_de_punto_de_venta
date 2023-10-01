@@ -29,6 +29,10 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.TBInstagram = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.TBDni = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -43,10 +47,6 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.TBInstagram = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.TBDni = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -75,6 +75,44 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(614, 722);
             this.panel1.TabIndex = 0;
+            // 
+            // TBInstagram
+            // 
+            this.TBInstagram.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TBInstagram.Location = new System.Drawing.Point(161, 476);
+            this.TBInstagram.Multiline = true;
+            this.TBInstagram.Name = "TBInstagram";
+            this.TBInstagram.Size = new System.Drawing.Size(240, 20);
+            this.TBInstagram.TabIndex = 31;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(156, 445);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(91, 24);
+            this.label9.TabIndex = 30;
+            this.label9.Text = "Instagram";
+            // 
+            // TBDni
+            // 
+            this.TBDni.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TBDni.Location = new System.Drawing.Point(160, 412);
+            this.TBDni.Multiline = true;
+            this.TBDni.Name = "TBDni";
+            this.TBDni.Size = new System.Drawing.Size(240, 20);
+            this.TBDni.TabIndex = 29;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(155, 381);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(49, 24);
+            this.label8.TabIndex = 28;
+            this.label8.Text = "D.N.I.";
             // 
             // button1
             // 
@@ -143,6 +181,7 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(240, 20);
             this.textBox4.TabIndex = 22;
+            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // label5
             // 
@@ -220,44 +259,6 @@
             this.label1.Size = new System.Drawing.Size(203, 40);
             this.label1.TabIndex = 14;
             this.label1.Text = "Editar Usuario";
-            // 
-            // TBInstagram
-            // 
-            this.TBInstagram.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TBInstagram.Location = new System.Drawing.Point(161, 476);
-            this.TBInstagram.Multiline = true;
-            this.TBInstagram.Name = "TBInstagram";
-            this.TBInstagram.Size = new System.Drawing.Size(240, 20);
-            this.TBInstagram.TabIndex = 31;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(156, 445);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(91, 24);
-            this.label9.TabIndex = 30;
-            this.label9.Text = "Instagram";
-            // 
-            // TBDni
-            // 
-            this.TBDni.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TBDni.Location = new System.Drawing.Point(160, 412);
-            this.TBDni.Multiline = true;
-            this.TBDni.Name = "TBDni";
-            this.TBDni.Size = new System.Drawing.Size(240, 20);
-            this.TBDni.TabIndex = 29;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(155, 381);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(49, 24);
-            this.label8.TabIndex = 28;
-            this.label8.Text = "D.N.I.";
             // 
             // EditarUsuario
             // 

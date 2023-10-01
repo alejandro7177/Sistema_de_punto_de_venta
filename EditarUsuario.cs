@@ -26,5 +26,10 @@ namespace Proyecto_Taller_AdminShop
         {
             //si jugasa a visual
         }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

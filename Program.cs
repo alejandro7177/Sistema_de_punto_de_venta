@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Proyecto_Taller_AdminShop.Vendedor;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,7 @@ namespace Proyecto_Taller_AdminShop
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FIngresar());
+            Application.Run(new PanelAdmin());
         }
     }
 }
