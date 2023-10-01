@@ -117,7 +117,7 @@
             this.panelPrincipal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(244)))));
             this.panelPrincipal.Location = new System.Drawing.Point(180, 67);
             this.panelPrincipal.Name = "panelPrincipal";
-            this.panelPrincipal.Size = new System.Drawing.Size(955, 479);
+            this.panelPrincipal.Size = new System.Drawing.Size(955, 789);
             this.panelPrincipal.TabIndex = 6;
             this.panelPrincipal.Paint += new System.Windows.Forms.PaintEventHandler(this.panelPrincipal_Paint);
             // 

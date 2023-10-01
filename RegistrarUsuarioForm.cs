@@ -196,6 +196,23 @@ namespace Proyecto_Taller_AdminShop
                 TBInstagram.ForeColor = System.Drawing.Color.Red;
             }
         }
+
+        private void TBContraseña_TextChanged_1(object sender, EventArgs e)
+        {
+            if (ValidationUser.ValidationLengh(TBContraseña))
+            {
+                TBContraseña.ForeColor = System.Drawing.Color.Black;
+            }
+            else
+            {
+                TBContraseña.ForeColor = System.Drawing.Color.Red;
+            }
+        }
+
+        private void RegistrarUsuarioForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
