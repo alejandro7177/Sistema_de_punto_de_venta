@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PanelVendedor));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.RC = new System.Windows.Forms.Button();
@@ -168,6 +169,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panelPrincipal);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "PanelVendedor";
             this.Text = "Panel Vendedor";
             this.Load += new System.EventHandler(this.PanelVendedor_Load);

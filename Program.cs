@@ -17,7 +17,7 @@ namespace Proyecto_Taller_AdminShop
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new PanelAdmin());
+            Application.Run(new FIngresar());
         }
     }
 }

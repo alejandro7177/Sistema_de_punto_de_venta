@@ -34,11 +34,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.correo = new System.Windows.Forms.TextBox();
             this.inputPassword = new System.Windows.Forms.TextBox();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -105,22 +105,6 @@
             this.panel1.Size = new System.Drawing.Size(482, 330);
             this.panel1.TabIndex = 12;
             // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.Black;
-            this.panel3.Location = new System.Drawing.Point(27, 201);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(425, 1);
-            this.panel3.TabIndex = 15;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Black;
-            this.panel2.Location = new System.Drawing.Point(29, 143);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(425, 1);
-            this.panel2.TabIndex = 14;
-            // 
             // correo
             // 
             this.correo.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -142,6 +126,14 @@
             this.inputPassword.TabIndex = 17;
             this.inputPassword.UseSystemPasswordChar = true;
             // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Black;
+            this.panel3.Location = new System.Drawing.Point(27, 201);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(425, 1);
+            this.panel3.TabIndex = 15;
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -151,6 +143,14 @@
             this.label4.Size = new System.Drawing.Size(187, 40);
             this.label4.TabIndex = 12;
             this.label4.Text = "Iniciar Sesión";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Black;
+            this.panel2.Location = new System.Drawing.Point(29, 143);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(425, 1);
+            this.panel2.TabIndex = 14;
             // 
             // label5
             // 
@@ -173,8 +173,11 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "FIngresar";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Iniciar sesión";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
