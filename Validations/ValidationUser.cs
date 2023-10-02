@@ -23,5 +23,10 @@ namespace Proyecto_Taller_AdminShop
 
             return tB.Text.Length >= 7 && regex.IsMatch(text);
         }
+
+        public static bool ValidateUniqueEmail(Classes.Models.Admin_shopEn dbContext, string correo)
+        {
+            return dbContext.Usuario.Any(u => u.correo == correo);
+        }
     }
 }

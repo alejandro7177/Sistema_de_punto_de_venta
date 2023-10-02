@@ -104,6 +104,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AgregarProductoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarProductoForm.Designer.cs">
+      <DependentUpon>AgregarProductoForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Classes\Encrypt.cs" />
     <Compile Include="Classes\Models\Categoria.cs">
       <DependentUpon>db.tt</DependentUpon>
@@ -225,6 +231,9 @@
     <Compile Include="VentasView.Designer.cs">
       <DependentUpon>VentasView.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AgregarProductoForm.resx">
+      <DependentUpon>AgregarProductoForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ClientesView.resx">
       <DependentUpon>ClientesView.cs</DependentUpon>
     </EmbeddedResource>

@@ -63,7 +63,7 @@
             this.label3.Font = new System.Drawing.Font("Quicksand", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(21, 157);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(79, 19);
+            this.label3.Size = new System.Drawing.Size(78, 19);
             this.label3.TabIndex = 8;
             this.label3.Text = "Contraseña";
             // 
@@ -73,7 +73,7 @@
             this.label2.Font = new System.Drawing.Font("Quicksand", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(27, 98);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(50, 19);
+            this.label2.Size = new System.Drawing.Size(51, 19);
             this.label2.TabIndex = 7;
             this.label2.Text = "Correo";
             // 
@@ -108,21 +108,21 @@
             // correo
             // 
             this.correo.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.correo.Font = new System.Drawing.Font("Quicksand Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.correo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.correo.Location = new System.Drawing.Point(29, 118);
             this.correo.Name = "correo";
             this.correo.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.correo.Size = new System.Drawing.Size(425, 19);
+            this.correo.Size = new System.Drawing.Size(425, 17);
             this.correo.TabIndex = 18;
             // 
             // inputPassword
             // 
             this.inputPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.inputPassword.Font = new System.Drawing.Font("Quicksand Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.inputPassword.Location = new System.Drawing.Point(28, 176);
             this.inputPassword.Name = "inputPassword";
             this.inputPassword.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.inputPassword.Size = new System.Drawing.Size(424, 19);
+            this.inputPassword.Size = new System.Drawing.Size(424, 17);
             this.inputPassword.TabIndex = 17;
             this.inputPassword.UseSystemPasswordChar = true;
             // 
@@ -160,7 +160,7 @@
             this.label5.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label5.Location = new System.Drawing.Point(54, 64);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(64, 31);
+            this.label5.Size = new System.Drawing.Size(61, 31);
             this.label5.TabIndex = 13;
             this.label5.Text = "Hola!";
             // 
@@ -179,6 +179,7 @@
             this.Name = "FIngresar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Iniciar sesión";
+            this.Load += new System.EventHandler(this.FIngresar_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

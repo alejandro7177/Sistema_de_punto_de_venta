@@ -3,6 +3,8 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Entity.Infrastructure;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Numerics;
@@ -10,6 +12,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.Entity;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Proyecto_Taller_AdminShop
@@ -39,41 +42,49 @@ namespace Proyecto_Taller_AdminShop
 
             if (valid)
             {
+
                 string sPass = Classes.Encrypt.GetSHA256(TBContraseña.Text.Trim());
                 using (Classes.Models.Admin_shopEn db = new Classes.Models.Admin_shopEn())
                 {
-                    Usuario user = new Usuario();
-                    if (CBRol.SelectedItem.ToString() == "Vendedor")
+                    if (!ValidationUser.ValidateUniqueEmail(db, TBEmail.Text))
                     {
-                        user.tipo_usuario = 2;
-                    }
-                    else if(CBRol.SelectedItem.ToString() == "Administrador")
-                    {
-                        user.tipo_usuario = 3;
-                    }
-                    user.nombre = TBNombre.Text.Trim();
-                    user.contraseña = sPass;
-                    user.correo = TBEmail.Text.Trim();
-                    user.dni = long.Parse(TBDni.Text);
-                    user.apellido = TBApellido.Text.Trim();
-                    user.instagram = TBInstagram.Text.Trim();
-                    user.telefono = long.Parse(TBTelefono.Text);
-                    
-                    db.Usuario.Add(user);
-                    db.SaveChanges();
-                    MessageBox.Show("Usuario Creado Correctamente!","Exito",MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        Usuario user = new Usuario();
+                        if (CBRol.SelectedItem.ToString() == "Vendedor")
+                        {
+                            user.tipo_usuario = 2;
+                        }
+                        else if (CBRol.SelectedItem.ToString() == "Administrador")
+                        {
+                            user.tipo_usuario = 3;
+                        }
+                        user.nombre = TBNombre.Text.Trim();
+                        user.contraseña = sPass;
+                        user.correo = TBEmail.Text.Trim();
+                        user.dni = long.Parse(TBDni.Text);
+                        user.apellido = TBApellido.Text.Trim();
+                        user.instagram = TBInstagram.Text.Trim();
+                        user.telefono = long.Parse(TBTelefono.Text);
 
-                    TBNombre.Clear();
-                    TBApellido.Clear();
-                    TBContraseña.Clear();
-                    CBRol.SelectedIndex = -1;
-                    TBEmail.Clear();
-                    TBDni.Clear();
-                    TBInstagram.Clear();
-                    TBTelefono.Clear();
+                        db.Usuario.Add(user);
+                        db.SaveChanges();
+                        MessageBox.Show("Usuario Creado Correctamente!", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                        TBNombre.Clear();
+                        TBApellido.Clear();
+                        TBContraseña.Clear();
+                        CBRol.SelectedIndex = -1;
+                        TBEmail.Clear();
+                        TBDni.Clear();
+                        TBInstagram.Clear();
+                        TBTelefono.Clear();
+                    }
+                    else 
+                    {
+                        MessageBox.Show("Correo ya registrado!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
             }
-            else if (!valid)
+            else
             {
                 MessageBox.Show("Complete todos los campos correctamente", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -90,7 +101,7 @@ namespace Proyecto_Taller_AdminShop
                 TBNombre.ForeColor = System.Drawing.Color.Red;
             }
         }
-
+        
         private void TBNombreKey(object sender, KeyPressEventArgs e)
         {
             if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar))
