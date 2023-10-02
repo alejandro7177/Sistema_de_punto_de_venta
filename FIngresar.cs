@@ -56,5 +56,10 @@ namespace Proyecto_Taller_AdminShop
                 }
             }
         }
+
+        private void FIngresar_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

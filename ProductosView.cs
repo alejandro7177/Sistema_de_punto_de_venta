@@ -64,7 +64,8 @@ namespace Proyecto_Taller_AdminShop
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            AgregarProductoForm agregarProductoForm = new AgregarProductoForm();
+            agregarProductoForm.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
